@@ -8,6 +8,6 @@ dns.setServers([
 
 connectdb() // ye function database ko connect karata hai
 
-app.listen(3000, ()=>{
-    console.log("server runnig on port 3000")
-})
+const PORT = process.env.PORT || 3000
+
+app.listen(PORT)
